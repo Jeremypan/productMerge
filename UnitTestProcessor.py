@@ -19,6 +19,7 @@ testResult=make_json("./testResult/result_output.csv")
 
 def unitTest(output, testResult):
   try:
+      assert len(set([tuple(o.items()) for o in output]))==len(set([tuple(o.items()) for o in testResult]))
       for row in output:
         assert row in testResult
       for row in testResult:
@@ -31,3 +32,4 @@ def unitTest(output, testResult):
     
     
 unitTest(output,testResult)
+
