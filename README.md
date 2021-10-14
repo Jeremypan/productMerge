@@ -1,3 +1,30 @@
+# The Program is designed for the below Coding Skills Challenge
+
+The Program is in Python 3.6+
+- CatalogMergeProccessor is to merge two companies' product with input files under input folder and generate result under the output folder
+
+- UnitTestProccessor is to make unit test between the output from CatalogMergeProccessor and correct result (put correctResult file under testResult folder and name the file - "result_output.csv")
+
+## Run CatalogMergeProccessor.py
+
+run cmd at home directory of repo("./")
+
+```console
+python/python3 CatalogMergeProccessor.py
+```
+
+If it is successful, the output file - "result_output.csv" will be generated under output folder
+
+## Run UnitTestProccessor.py
+
+run cmd at home directory of repo("./")
+
+```console
+python/python3 UnitTestProcessor.py
+```
+
+The testing result will be disployed at console. (Unit Test Pass/Unit Test Fail)
+
 # Coding Skills Challenge
 
 ### The below describes a problem statement, make sure to read all the instructions in this readme before you start.
