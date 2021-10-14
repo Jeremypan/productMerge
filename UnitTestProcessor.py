@@ -29,17 +29,25 @@ def unitTest(output, testResult):
         assert len(output)==len(testResult)
       except AssertionError:
         print("Unit Test Fail, the output size is different from the correct result")
-      finally:
+        #To identify the missing result
+        if(len(output)<len(testResult)):
+            for row in testResult:
+                if row not in output:
+                    print("Unit Test Fail, Output does not contain correct Result " + json.dumps(row))
+        else:
+            for row in output:
+                if row not in testResult:
+                    print("Unit Test Fail, " + json.dumps(row) + " is the incorrect Result")
+            
+      else:
         try:
         #To check if output has correct result
             for row in output:
                 assert row in testResult, "Unit Test Fail, Output "+json.dumps(row)+" is the incorrect result"
-        #To check if output contain all of correct results
-            for row in testResult:
-                assert row in output, "Unit Test Fail, Output does not contain correct Result " + json.dumps(row)
         except AssertionError as msg:
             print(msg)
         else:
-            print("Unit Test Pass")    
+            print("Unit Test Pass")
+           
 unitTest(output,testResult)
 
