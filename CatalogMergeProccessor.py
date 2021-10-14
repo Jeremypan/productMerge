@@ -1,8 +1,5 @@
 import csv
-import json
-
 def make_json(csvFilePath):
-     
     # create a dictionary
     data = []
      
