@@ -10,7 +10,7 @@ The Program is in Python 3.6+
 run cmd at home directory of repo("./")
 
 ```console
-python/python3 CatalogMergeProccessor.py
+python CatalogMergeProccessor.py
 ```
 
 If it is successful, the output file - "result_output.csv" will be generated under output folder
@@ -20,7 +20,7 @@ If it is successful, the output file - "result_output.csv" will be generated und
 run cmd at home directory of repo("./")
 
 ```console
-python/python3 UnitTestProcessor.py
+python UnitTestProcessor.py
 ```
 
 The testing result will be disployed at console. (Unit Test Pass/Unit Test Fail)
